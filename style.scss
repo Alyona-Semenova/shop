@@ -152,7 +152,6 @@ body {
 
 .products-container {
     width: 1140px;
-    height: 1400px;
     margin: 0 auto;
     margin-bottom: 95.5px;
 
@@ -433,5 +432,126 @@ body {
                 height: 16px;
             }
         }
+    }
+}
+
+/* Second page Catalog*/
+
+.catalog-menu {
+    height: 148px;
+    background: #f8f3f4;
+    width: 100%;
+    margin: 0 auto;
+
+    &__container {
+        width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+
+        span {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #f16d7f;
+        }
+    }
+
+    &__breadcrumbs {
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+
+        &_item {
+            cursor: pointer;
+        }
+
+        &_item_selected {
+            font-weight: 700;
+            line-height: 16.8;
+            font-size: 14px;
+            color: #f16d7f;
+            cursor: pointer;
+        }
+    }
+}
+
+.products-filters {
+    width: 1140px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    margin-top: 51px;
+    margin-bottom: 64px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        margin-right: 304px;
+        margin-left: 17px;
+        cursor: pointer;
+
+        .i-filters {
+            margin-left: 11px;
+        }
+    }
+
+    &__group {
+        display: flex;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6f6e6e;
+
+        .product-filters__item {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6f6e6e;
+            margin-right: 28px;
+            cursor: pointer;
+
+            .i-arrow {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.product-pagination {
+    width: 282px;
+    height: 43px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    margin: 0 auto;
+    display: flex;
+
+    &__item {
+        width: 30px;
+        height: 100%;
+        color: #c4c4c4;
+
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19.2px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-selected {
+        color: #ef5b70;
     }
 }
